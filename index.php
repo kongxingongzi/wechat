@@ -1,29 +1,39 @@
 <?php 
 
-require __DIR__.'vendor/autolaod.php';
+// require __DIR__.'vendor/autolaod.php';
 
-use EasyWeChat\Factory;
+// echo '123';die;
 
-$options = [
-    'app_id'    => 'wx54f0e94fbee136c0',
-    'secret'    => '6ec9e287b58a6a06ef8cb04c604e9113',
-    'token'     => 'weixin',
-    'log' => [
-        'level' => 'debug',
-        'file'  => '/tmp/easywechat.log',
-    ],
-    // ...
-];
+// use EasyWeChat\Factory;
 
-$app = Factory::officialAccount($options);
+// $options = [
+//     'app_id'    => 'wx54f0e94fbee136c0',
+//     'secret'    => '6ec9e287b58a6a06ef8cb04c604e9113',
+//     'token'     => 'weixin',
+//     'log' => [
+//         'level' => 'debug',
+//         'file'  => '/tmp/easywechat.log',
+//     ],
+//     // ...
+// ];
 
-$server = $app->server;
-$user = $app->user;
+// $app = Factory::officialAccount($options);
 
-$server->push(function($message) use ($user) {
-    $fromUser = $user->get($message['FromUserName']);
+// $server = $app->server;
+// $user = $app->user;
 
-    return "{$fromUser->nickname} 您好！欢迎关注 overtrue!";
-});
+// $server->push(function($message) use ($user) {
+//     $fromUser = $user->get($message['FromUserName']);
 
-$server->serve()->send();
+//     return "{$fromUser->nickname} 您好！欢迎关注 overtrue!";
+// });
+
+// $server->serve()->send();
+// 
+// 
+// <?php
+/**
+  * wechat php test
+  */
+//define your token
+echo '123';
